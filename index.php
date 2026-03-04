@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESC 2026 – Übersicht</title>
     <title>Eurovision Favoriten-Tipp</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="container">
-      <header>
-        <h1>🎤 Eurovision Favoriten-Tipp</h1>
+      <header class="hero card">
+        <h1>🎤 Eurovision Song Contest 2026</h1>
         <p>
-          Tippe aus Spaß deine Top 3 für den Eurovision Song Contest und sammle
-          Fan-Punkte.
+          Willkommen zur ESC-Übersicht. Wähle eine Seite, um Halbfinale 1,
+          Halbfinale 2 oder das Finale mit allen Details und Tippbereichen zu
+          öffnen.
         </p>
       </header>
-
 
       <section class="card">
         <h2>ESC 2026 Seiten</h2>
@@ -26,39 +27,6 @@
           <a class="stage-link" href="finale.php">Finale</a>
         </nav>
       </section>
-
-      <section class="card">
-        <h2>Dein Tipp</h2>
-        <form id="prediction-form">
-          <label for="name">Dein Name</label>
-          <input id="name" name="name" type="text" required placeholder="z. B. Alex" />
-
-          <label for="first">🥇 Platz 1</label>
-          <select id="first" name="first" required></select>
-
-          <label for="second">🥈 Platz 2</label>
-          <select id="second" name="second" required></select>
-
-          <label for="third">🥉 Platz 3</label>
-          <select id="third" name="third" required></select>
-
-          <button type="submit">Tipp speichern</button>
-        </form>
-        <p id="form-message" class="message" aria-live="polite"></p>
-      </section>
-
-      <section class="card">
-        <h2>Aktuelles Fan-Ranking</h2>
-        <p class="hint">Platz 1 = 3 Punkte, Platz 2 = 2 Punkte, Platz 3 = 1 Punkt</p>
-        <ol id="ranking"></ol>
-      </section>
-
-      <section class="card">
-        <h2>Abgegebene Tipps</h2>
-        <ul id="predictions"></ul>
-      </section>
     </main>
-
-    <script src="app.js"></script>
   </body>
 </html>
