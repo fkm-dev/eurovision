@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ESC 2026 – Übersicht</title>
+    <title>Eurovision Favoriten-Tipp</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
