@@ -25,6 +25,8 @@
           <a class="stage-link" href="halbfinale.php">Halbfinale 1</a>
           <a class="stage-link" href="halbfinale-2.php">Halbfinale 2</a>
           <a class="stage-link" href="finale.php">Finale</a>
+          <a class="stage-link" href="live-voting.php">Live Abstimmung</a>
+          <a class="stage-link" href="admin.php">Adminbereich</a>
         </nav>
       </section>
     </main>
