@@ -6,6 +6,7 @@
   --line: #23283a;
   --accent: #7c5cff;
   --accent2: #27d3a2;
+  --accent-2: #27d3a2;
   --radius: 16px;
 }
 
@@ -16,11 +17,6 @@
 body {
   margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-  background:
-    radial-gradient(1200px 700px at 20% -10%, rgb(124 92 255 / 25%), transparent 60%),
-    radial-gradient(900px 600px at 90% 10%, rgb(39 211 162 / 18%), transparent 55%),
-    var(--bg);
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   background: radial-gradient(circle at top, #312f67 0%, var(--bg) 60%);
   color: var(--text);
 }
@@ -32,46 +28,6 @@ body {
 }
 
 .card {
-  border: 1px solid var(--line);
-  background: rgb(17 19 26 / 72%);
-  border-radius: var(--radius);
-  padding: 18px;
-  margin-bottom: 14px;
-}
-
-.hero p {
-  color: var(--muted);
-  line-height: 1.45;
-}
-
-h1,
-h2 {
-  margin-top: 0;
-}
-
-.hint {
-  color: var(--muted);
-  margin-top: -0.2rem;
-}
-
-.stage-links {
-  display: flex;
-  gap: 10px;
-  max-width: 780px;
-  margin: 0 auto;
-  padding: 2rem 1rem 3rem;
-}
-
-h1,
-h2 {
-  margin-top: 0;
-}
-
-header p {
-  opacity: 0.9;
-}
-
-.card {
   background: color-mix(in srgb, var(--card) 90%, black 10%);
   border: 1px solid #4a4881;
   border-radius: 14px;
@@ -80,9 +36,26 @@ header p {
   box-shadow: 0 8px 24px rgb(0 0 0 / 0.25);
 }
 
+.hero p,
+.hint {
+  color: var(--muted);
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
 form {
   display: grid;
   gap: 0.65rem;
+}
+
+.inline-form {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 input,
@@ -101,7 +74,7 @@ select {
 }
 
 button {
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
   border: 0;
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
   color: #120f25;
@@ -119,15 +92,9 @@ button:hover {
   color: #9bf4b4;
 }
 
-.hint {
-  margin-top: -0.2rem;
-  opacity: 0.75;
-}
-
 li {
   margin-bottom: 0.45rem;
 }
-
 
 .stage-links {
   display: flex;
@@ -148,4 +115,25 @@ li {
 
 .stage-link:hover {
   border-color: var(--accent-2);
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #2f2c58;
+  padding: 0.55rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  color: var(--muted);
 }
